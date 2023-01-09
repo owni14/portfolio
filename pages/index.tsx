@@ -23,7 +23,10 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
     if (isClick[0]) {
       /* project list가 있는 곳으로 실행시키는 함수 */
       setTimeout(() => {
-        element.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        element.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'end',
+        });
       }, 200);
     }
   }, [isClick]);
@@ -35,11 +38,8 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
           Freelance product designer, based in Poland
         </h1>
       </div>
-      <div>
-        <div
-          ref={element}
-          className='grid grid-cols-2 gap-16 place-items-center'
-        >
+      <div ref={element}>
+        <div className='grid grid-cols-2 gap-16 place-items-center'>
           {projectInfo.map((info) => {
             return (
               <Card
