@@ -11,9 +11,7 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
   const [projectInfo, setProjectInfo] = useState<ProjectInfoProps[]>([]);
   const element = useRef<any>();
   const route = useRouter();
-  const isClick = useContext(ClickState);
-
-  const query = route.asPath.substring(2);
+  const isClick = useContext<any>(ClickState);
 
   /* project rendering될 때 실행되는 hook */
   useEffect(() => {
@@ -22,7 +20,7 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
 
   /* query가 project-list로 들어왔을 때 실행되는 hook */
   useEffect(() => {
-    if (isClick) {
+    if (isClick[0]) {
       /* project list가 있는 곳으로 실행시키는 함수 */
       setTimeout(() => {
         element.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Props } from '../types';
 
-const ClickState = React.createContext({
+const ClickState: any = React.createContext({
   isClick: false,
 });
 

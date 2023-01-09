@@ -1,15 +1,11 @@
 import Link from 'next/link';
-import { useContext, useEffect } from 'react';
+import { useContext, useRef } from 'react';
 import ClickState from '../../store/clickState';
 
 const HeaderBar = () => {
   const navLink = ['Projects', 'About', 'Contact'];
 
-  const [isClick, setIsClick] = useContext(ClickState);
-
-  const onChangeClickHandler = () => {
-    setIsClick(true);
-  };
+  const [isClick, setIsClick] = useContext<any>(ClickState);
 
   return (
     <div className='flex flex-row flex-wrap content-center justify-between h-[150px] text-xl sticky top-0 bg-black z-10'>
@@ -17,6 +13,7 @@ const HeaderBar = () => {
         <Link
           className='hover:tracking-[0.2px] hover:opacity-50 hover:duration-500'
           href='/'
+          onClick={() => setIsClick(false)}
         >
           Main Logo Section
         </Link>
@@ -29,7 +26,7 @@ const HeaderBar = () => {
                 <Link
                   href='/'
                   as={`/#project-list`}
-                  onClick={onChangeClickHandler}
+                  onClick={() => setIsClick(true)}
                 >
                   {link}
                 </Link>
@@ -37,6 +34,7 @@ const HeaderBar = () => {
                 <Link
                   className='hover:opacity-50 hover:duration-500'
                   href={`/` + link.toLowerCase()}
+                  onClick={() => setIsClick(false)}
                 >
                   {link}
                 </Link>
