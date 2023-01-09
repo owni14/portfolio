@@ -1,5 +1,4 @@
-import { useRef, useEffect, useCallback, MutableRefObject } from 'react';
-// import { UseScrollFadeInType } from '../types';
+import { useRef, useEffect, useCallback } from 'react';
 
 const useScrollFadeIn: any = (duration = 1, delay = 0) => {
   const element = useRef<HTMLElement>();

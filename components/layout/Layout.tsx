@@ -9,7 +9,7 @@ const Layout = (props: Props) => {
       <div className='w-[1440px]'>
         <ClickStateProvider>
           <Header />
-          <main>{props.children}</main>
+          <main className='mb-28'>{props.children}</main>
           <Footer />
         </ClickStateProvider>
       </div>

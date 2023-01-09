@@ -11,7 +11,7 @@ const Footer = () => {
         <div>
           <Link href='https://github.com/owni14'>
             <Github
-              className='inline ml-5 hover:fill-[#868e96]'
+              className='inline ml-5 hover:fill-[#868e96] hover:duration-500'
               // style={{ display: 'inline' }}
               width='30'
               height='30'
@@ -20,7 +20,7 @@ const Footer = () => {
           </Link>
           <Link href='https://owni14.github.io/'>
             <Blog
-              className='inline ml-5 hover:fill-[#868e96]'
+              className='inline ml-5 hover:fill-[#868e96] hover:duration-500'
               width='30'
               height='30'
               fill='white'
@@ -28,7 +28,7 @@ const Footer = () => {
           </Link>
           <Link href='mailto:kmwoo514@gmail.com'>
             <Mail
-              className='inline ml-5 hover:fill-[#868e96]'
+              className='inline ml-5 hover:fill-[#868e96] hover:duration-500'
               width='30'
               height='30'
               fill='white'

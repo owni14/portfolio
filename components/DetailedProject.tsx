@@ -1,4 +1,4 @@
-const ProjectInfo = () => {
+const DetailedProject = () => {
   return (
     <div>
       <h1 className='my-32 text-5xl'>Project Title1</h1>
@@ -16,4 +16,4 @@ const ProjectInfo = () => {
   );
 };
 
-export default ProjectInfo;
+export default DetailedProject;

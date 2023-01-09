@@ -11,7 +11,7 @@ const HeaderBar = () => {
     <div className='flex flex-row flex-wrap content-center justify-between h-[120px] text-xl sticky top-0 bg-black z-10'>
       <div>
         <Link
-          className='hover:tracking-[0.2px] hover:opacity-50 hover:duration-500'
+          className='hover:opacity-50 hover:duration-500'
           href='/'
           onClick={() => setIsClick(false)}
         >

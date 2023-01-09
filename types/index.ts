@@ -11,12 +11,11 @@ export interface ProjectInfoProps {
   image: string[];
   content: string[];
   date: string;
-  label: string;
 }
 
 export interface CardProps {
+  id: number;
   date: string;
   image: string[];
-  label: string;
   title: string;
 }

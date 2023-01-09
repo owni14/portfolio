@@ -1,12 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import { CardProps } from '../types';
-import Image from 'next/image';
 
 const Card = (projectInfo: CardProps) => {
   return (
     <div className='max-h-[35rem]'>
-      <Link className='group' href={`/project/${projectInfo.label}`}>
+      <Link className='group' href={`/project/${projectInfo.id}`}>
         <div className='max-h-[450px] overflow-hidden '>
           <img
             className='group-hover:scale-105 group-hover:duration-500'
