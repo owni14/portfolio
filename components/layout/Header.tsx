@@ -3,19 +3,19 @@ import { useContext, useRef } from 'react';
 import ClickState from '../../store/clickState';
 
 const HeaderBar = () => {
-  const navLink = ['Projects', 'About', 'Contact'];
+  const navLink = ['Projects', 'About', 'Skills', 'Career'];
 
   const [isClick, setIsClick] = useContext<any>(ClickState);
 
   return (
-    <div className='flex flex-row flex-wrap content-center justify-between h-[150px] text-xl sticky top-0 bg-black z-10'>
+    <div className='flex flex-row flex-wrap content-center justify-between h-[120px] text-xl sticky top-0 bg-black z-10'>
       <div>
         <Link
           className='hover:tracking-[0.2px] hover:opacity-50 hover:duration-500'
           href='/'
           onClick={() => setIsClick(false)}
         >
-          Main Logo Section
+          Min's Portfolio
         </Link>
       </div>
       <nav>
