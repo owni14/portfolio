@@ -32,7 +32,7 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
   }, [isClick]);
 
   return (
-    <div className='my-20 animate-fade-in-up'>
+    <div className='my-32 animate-fade-in-up'>
       <div>
         <h1 className='my-32 text-7xl'>
           Freelance product designer, based in Poland
