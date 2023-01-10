@@ -1,17 +1,14 @@
 const DetailedProject = () => {
   return (
-    <div>
-      <h1 className='my-32 text-5xl'>Project Title1</h1>
-      <div className='flex flex-row items-start justify-between'>
-        <h2 className='text-3xl min-w-[28rem]'>UI/UX, Illustration</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat
-          sapien sit amet magna fermentum, ut auctor mi tempus. Pellentesque id
-          massa lacus. Vestibulum pellentesque malesuada enim, eget gravida elit
-          finibus sit amet. In ipsum elit, vulputate eu arcu quis, dictum
-          lobortis ex.
-        </p>
+    <div className='animate-fade-in-up'>
+      <div className='mb-36 mt-20 text-7xl'>
+        <p className='mb-4'>Project Name</p>
       </div>
+      <div>Deployment Link</div>
+      <div>Summary and main function</div>
+      <div>Background</div>
+      <div>Realization</div>
+      <div>Technology Stacks</div>
     </div>
   );
 };
