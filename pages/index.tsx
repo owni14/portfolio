@@ -10,6 +10,7 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
   const [projectList, setProjectList] = useState<ProjectInfoProps[]>([]);
   const element = useRef<any>();
   const isClick = useContext<any>(ClickState);
+  const headerHeight = -120;
 
   /* project rendering될 때 실행되는 hook */
   useEffect(() => {
@@ -18,12 +19,16 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
 
   /* query가 project-list로 들어왔을 때 실행되는 hook */
   useEffect(() => {
+    const targetElement =
+      element.current.getBoundingClientRect().top +
+      window.scrollY +
+      headerHeight;
     if (isClick[0]) {
-      /* project list가 있는 곳으로 실행시키는 함수 */
+      /* project list로 scroll하는 함수 */
       setTimeout(() => {
-        element.current?.scrollIntoView({
+        window.scrollTo({
+          top: targetElement,
           behavior: 'smooth',
-          block: 'start',
         });
       }, 200);
     }
