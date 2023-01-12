@@ -38,5 +38,19 @@
     ],
     "content": ["0번 이미지 설명", "1번 이미지 설명"],
     "date": "Dec 31, 2022"
+  },
+  {
+    "image": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/ba/Seoul_Tower_%284394893276%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/ba/Seoul_Tower_%284394893276%29.jpg"
+    ],
+    "projectName": "🚗얻어타다",
+    "deployLink": "deploy test",
+    "summary": "summary test",
+    "meaning": "meaning test",
+    "technology": {
+      "frontEnd": "frontEndStackTest",
+      "backEnd": "BackEndStackTest"
+    }
   }
 ]
