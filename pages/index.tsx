@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { ProjectInfoProps } from '../types';
 import projectLists from '../projectList.json';
 import ClickState from '../store/clickState';
+import SkillsCard from '../components/common/SkillsCard';
 
 const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
   const [projectList, setProjectList] = useState<ProjectInfoProps[]>([]);
@@ -30,17 +31,15 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
           top: targetElement,
           behavior: 'smooth',
         });
-      }, 200);
+      }, 100);
     }
   }, [isClick]);
 
   return (
     <div className='animate-fade-in-up'>
       <div className='mb-36 mt-20 text-7xl'>
-        <h1>
-          <p className='mb-4'>Hello! I'm Minwoo Kim from South Korea.</p>
-          <p>I'm working as a Front-end developer</p>
-        </h1>
+        <p className='mb-4'>Hello! I'm Minwoo Kim from South Korea.</p>
+        <p>I'm working as a Front-end developer</p>
       </div>
       <div>
         <div

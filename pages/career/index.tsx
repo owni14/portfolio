@@ -1,5 +1,10 @@
 const career = () => {
-  return <>career component</>;
+  return (
+    <>
+      <div>Education</div>
+      <div>Experience</div>
+    </>
+  );
 };
 
 export default career;

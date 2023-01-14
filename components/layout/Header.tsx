@@ -8,7 +8,7 @@ const HeaderBar = () => {
   const [isClick, setIsClick] = useContext<any>(ClickState);
 
   return (
-    <div className='flex flex-row flex-wrap content-center justify-between h-[120px] text-xl sticky top-0 bg-black z-10'>
+    <div className='flex flex-row flex-wrap content-center justify-between h-[120px] text-xl sticky top-0 bg-neutral-900 z-10'>
       <div>
         <Link
           className='hover:opacity-50 hover:duration-500'

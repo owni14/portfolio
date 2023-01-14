@@ -5,7 +5,7 @@ import Header from './Header';
 
 const Layout = (props: Props) => {
   return (
-    <div className='flex content-center justify-center min-h-screen text-white bg-black'>
+    <div className='flex content-center justify-center min-h-screen text-white bg-neutral-900 font-google'>
       <div className='w-[1440px]'>
         <ClickStateProvider>
           <Header />

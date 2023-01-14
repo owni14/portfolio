@@ -2,17 +2,24 @@ import Link from 'next/link';
 import Github from '../../assets/images/github.svg';
 import Blog from '../../assets/images/blogger.svg';
 import Mail from '../../assets/images/minutemailer.svg';
+import { useEffect, useState } from 'react';
 
 const Footer = () => {
+  const [date, setDate] = useState<number>();
+  const thisYear = new Date().getFullYear();
+
+  useEffect(() => {
+    setDate(thisYear);
+  }, []);
+
   return (
-    <div className='h-[50px]'>
+    <div className='h-[50px] '>
       <div className='flex items-center justify-between text-center'>
-        <p className='inline'>© 2023. Minwoo Kim. All rights reserved.</p>
+        <p className='inline'>© {date}. Minwoo Kim. All rights reserved.</p>
         <div>
           <Link href='https://github.com/owni14'>
             <Github
               className='inline ml-5 hover:fill-[#868e96] hover:duration-500'
-              // style={{ display: 'inline' }}
               width='30'
               height='30'
               fill='white'

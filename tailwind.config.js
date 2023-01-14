@@ -22,6 +22,9 @@ module.exports = {
         'fade-in-up': 'fade-in-up 1s ease-out',
       },
     },
+    fontFamily: {
+      google: ["'Noto Sans KR'", 'sans-serif'],
+    },
   },
   plugins: [],
 };
