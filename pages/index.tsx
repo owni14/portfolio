@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react';
 import { ProjectInfoProps } from '../types';
 import projectLists from '../projectList.json';
 import ClickState from '../store/clickState';
-import SkillsCard from '../components/common/SkillsCard';
 
 const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
   const [projectList, setProjectList] = useState<ProjectInfoProps[]>([]);

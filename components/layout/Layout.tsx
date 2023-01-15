@@ -5,8 +5,8 @@ import Header from './Header';
 
 const Layout = (props: Props) => {
   return (
-    <div className='flex content-center relative justify-center min-h-screen text-white bg-neutral-900 font-google'>
-      <div className='w-[1440px]'>
+    <div className='flex content-center justify-center min-h-screen text-white bg-neutral-900 font-google'>
+      <div className='w-[1440px] relative'>
         <ClickStateProvider>
           <Header />
           <main className='mb-28'>{props.children}</main>
