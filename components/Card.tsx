@@ -1,25 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
-import { CardProps } from '../types';
+import { ProjectListProps } from '../types';
 
-const Card = (projectInfo: CardProps) => {
+const Card = (props: ProjectListProps) => {
   return (
     <div className='max-h-[35rem]'>
-      <Link className='group' href={`/project/${projectInfo.id}`}>
+      <Link className='group' href={`/project/${props.id}`}>
         <div className='max-h-[450px] overflow-hidden '>
           <img
             className='group-hover:scale-105 group-hover:duration-500'
-            src={projectInfo.image[0]}
+            src={props.image}
             alt='project_img'
           />
         </div>
         <div>
-          <h1 className='my-4 text-2xl font-bold group-hover:opacity-50 group-hover:duration-500'>
-            {projectInfo.title}
+          <h1 className='my-4 text-2xl font-bold group-hover:text-gray-400 group-hover:duration-500'>
+            {props.title}
           </h1>
-          <p className='text-xl group-hover:opacity-50 group-hover:duration-500'>
-            {projectInfo.date}
-          </p>
+          <p className='text-xl text-gray-400'>{props.date}</p>
         </div>
       </Link>
     </div>

@@ -2,19 +2,19 @@ import React, { useContext, useRef } from 'react';
 import Card from '../components/Card';
 import { GetStaticProps, InferGetServerSidePropsType } from 'next';
 import { useState, useEffect } from 'react';
-import { ProjectInfoProps } from '../types';
-import projectLists from '../projectList.json';
+import { ProjectListProps } from '../types';
+import ReceivedProjectList from '../projectList.json';
 import ClickState from '../store/clickState';
 
 const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
-  const [projectList, setProjectList] = useState<ProjectInfoProps[]>([]);
+  const [projectList, setProjectList] = useState<ProjectListProps[]>([]);
   const element = useRef<any>();
   const isClick = useContext<any>(ClickState);
   const headerHeight = -120;
 
   /* project rendering될 때 실행되는 hook */
   useEffect(() => {
-    setProjectList(props.projectList);
+    setProjectList(props.ReceivedProjectList);
   }, [props]);
 
   /* query가 project-list로 들어왔을 때 실행되는 hook */
@@ -45,14 +45,18 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
           ref={element}
           className='grid grid-cols-2 gap-16 place-items-center'
         >
-          {projectList.map((info) => {
+          {projectList.map((list) => {
             return (
               <Card
-                id={info.id}
-                key={info.id}
-                image={info.image}
-                title={info.title}
-                date={info.date}
+                key={list.id}
+                id={list.id}
+                image={list.image}
+                title={list.title}
+                deployLink={list.deployLink}
+                summary={list.summary}
+                meaning={list.meaning}
+                technology={list.technology}
+                date={list.date}
               />
             );
           })}
@@ -66,7 +70,7 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
-      projectList: projectLists,
+      ReceivedProjectList: ReceivedProjectList,
     },
   };
 };

@@ -1,4 +1,4 @@
-import SkillsCard from '../../components/SkillsCard';
+import SkillsCard from '../../components/common/SkillsCard';
 
 // Import Front End Logos
 import IconJavascript from '../../assets/images/javascript.svg';
