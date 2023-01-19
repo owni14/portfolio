@@ -38,7 +38,7 @@ import IconVercel from '../../assets/images/vercel.svg';
 
 const skills = () => {
   return (
-    <div className='text-3xl w-full animate-fade-in-up py-5 flex flex-row justify-between'>
+    <div className='text-3xl w-full animate-fade-in-up py-5 flex flex-row justify-between font-bold'>
       <SkillsCard>
         <div className='border-b-4 border-black'>Front End</div>
         <div className='grid grid-cols-2 gap-2 place-items-center mt-3'>
@@ -97,15 +97,6 @@ const skills = () => {
           </div>
         </SkillsCard>
       </div>
-      {/* <div className='flex flex-row flex-1 my-12 items-center justify-between'>
-      <div className='flex flex-row flex-1 my-12 items-center'>
-        <h3 className='text-4xl w-2/6 text-center'>Communication</h3>
-        <p className='w-4/6'>Slack, Figma</p>
-      </div>
-      <div className='flex flex-row flex-1 my-12 items-center'>
-        <h3 className='text-4xl w-2/6 text-center'>Deployment</h3>
-        <p className='w-4/6'>Vercel</p>
-      </div> */}
     </div>
   );
 };

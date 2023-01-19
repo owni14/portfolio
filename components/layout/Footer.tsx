@@ -13,7 +13,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className='h-[60px] w-full absolute bottom-0 '>
+    <div className='h-[60px] w-full absolute bottom-0 font-medium'>
       <div className='flex items-center justify-between text-center'>
         <p className='inline'>© {date}. Minwoo Kim. All rights reserved.</p>
         <div>

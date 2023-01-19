@@ -23,7 +23,10 @@ module.exports = {
       },
     },
     fontFamily: {
-      google: ["'Noto Sans KR'", 'sans-serif'],
+      bold: ['Pretendard-Bold'],
+      light: ['Pretendard-Light'],
+      medium: ['Pretendard-Medium'],
+      regular: ['Pretendard-Regular'],
     },
   },
   plugins: [],

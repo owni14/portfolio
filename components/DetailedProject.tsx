@@ -20,7 +20,7 @@ const DetailedProject = (props: ProjectListProps) => {
         <div className='w-6/12'>
           <div className=' text-4xl mb-4'>🔗 Deployment Link</div>
           <Link
-            className='hover:text-gray-400 hover:duration-300'
+            className='hover:text-gray-500 hover:duration-300'
             href={props.deployLink}
           >
             {props.deployLink}
