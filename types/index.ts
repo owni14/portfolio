@@ -26,3 +26,8 @@ export interface CardProps {
   image: string;
   title: string;
 }
+
+export interface AboutContentType {
+  title: string;
+  content: string;
+}

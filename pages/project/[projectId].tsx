@@ -4,7 +4,6 @@ import ProjectList from '../../projectList.json';
 import { ProjectListProps } from '../../types';
 
 const Project = (props: ProjectListProps) => {
-  console.log('props:: ', props);
   return (
     <DetailedProject
       id={props.id}
