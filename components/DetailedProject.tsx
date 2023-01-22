@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { ProjectListProps } from '../types';
 
 const DetailedProject = (props: ProjectListProps) => {
-  console.log('props:: ', props);
   return (
     <div className='animate-fade-in-up'>
       <div className='mb-12 mt-8 text-5xl'>
@@ -37,24 +36,10 @@ const DetailedProject = (props: ProjectListProps) => {
       </div>
       <div className='mb-8'>
         <div className='text-4xl mb-4'>🛠️ Technology Stacks</div>
-        <ul className='list-decimal list-inside'>
-          <li className='flex flex-row'>
-            <p className='mr-2'>Front End :</p>
-            <p>{props.technology.frontEnd}</p>
-          </li>
-          <li className='flex flex-row'>
-            <p className='mr-2'>Back End :</p>
-            <p>{props.technology.backEnd}</p>
-          </li>
-          <li className='flex flex-row'>
-            <p className='mr-2'>Database :</p>
-            <p>{props.technology.database}</p>
-          </li>
-          <li className='flex flex-row'>
-            <p className='mr-2'>Deployment :</p>
-            <p>{props.technology.deployment}</p>
-          </li>
-        </ul>
+        <li>Front End : {props.technology.frontEnd}</li>
+        <li>Back End : {props.technology.backEnd}</li>
+        <li>Database : {props.technology.database}</li>
+        <li>Deployment : {props.technology.deployment}</li>
       </div>
     </div>
   );

@@ -5,14 +5,14 @@
     "title": "🚗 얻어타다",
     "date": "Jul 2022",
     "github": "https://github.com/owni14/CarpoolService_TeamProject",
-    "deployLink": " - ",
+    "deployLink": "-",
     "summary": "예시로 적어보는중 테스트 데이터",
     "meaning": "meaning test",
     "technology": {
       "frontEnd": "HTML, Javascript, CSS, Bootstrap, jQuery",
       "backEnd": "Java, Spring",
       "database": "Oracle",
-      "deployment": " - "
+      "deployment": "-"
     }
   }
 ]
