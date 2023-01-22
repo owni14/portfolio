@@ -6,7 +6,7 @@
     "date": "Jul 2022",
     "github": "https://github.com/owni14/CarpoolService_TeamProject",
     "deployLink": "-",
-    "summary": "예시로 적어보는중 테스트 데이터",
+    "summary": "같은 회사사람들끼리 카풀을 이용할 수 있는 웹서비스입니다. 기본적으로 운전자는 다음 날 카풀한다고 운전등록을 하게되면 카풀을 하고 싶은 사람들은 운전자 리스트에서 운전자의 위치를 확인할 수 있고, 운전자의 희망사항(Ex. 비흡연자, 여성전용)을 보고 신청하게 됩니다. ",
     "meaning": "meaning test",
     "technology": {
       "frontEnd": "HTML, Javascript, CSS, Bootstrap, jQuery",

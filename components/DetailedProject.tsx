@@ -8,13 +8,13 @@ const DetailedProject = (props: ProjectListProps) => {
         <p className='mb-4'>{props.title}</p>
       </div>
       <hr className='mb-8' />
-      <div>
+      <div className='mb-8'>
         <div className='text-4xl mb-4'>📌 Summary</div>
-        <p className='mb-8'>{props.summary}</p>
+        <pre className='whitespace-normal'>{props.summary}</pre>
       </div>
       <div className='mb-8'>
         <div className='text-4xl mb-4'>💡 Meaning</div>
-        <p>{props.meaning}</p>
+        <pre className=''>{props.meaning}</pre>
       </div>
       <div className='mb-8'>
         <div className='text-4xl mb-4'>🔍 Github</div>
