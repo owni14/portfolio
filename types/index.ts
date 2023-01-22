@@ -9,12 +9,14 @@ export interface ProjectListProps {
   id: string;
   image: string;
   title: string;
+  github: string;
   deployLink: string;
   summary: string;
   meaning: string;
   technology: {
     frontEnd: string;
     backEnd: string;
+    database: string;
     deployment: string;
   };
   date: string;

@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ProjectListProps } from '../types';
+import Image from '../assets/images/carpoolService.svg';
 
 const Card = (props: ProjectListProps) => {
   return (

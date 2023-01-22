@@ -10,6 +10,7 @@ const Project = (props: ProjectListProps) => {
       image={props.image}
       title={props.title}
       date={props.date}
+      github={props.github}
       deployLink={props.deployLink}
       summary={props.summary}
       meaning={props.meaning}
@@ -38,6 +39,7 @@ export const getStaticProps: GetStaticProps = async (
       image: projectInfo[0].image,
       title: projectInfo[0].title,
       date: projectInfo[0].date,
+      github: projectInfo[0].github,
       deployLink: projectInfo[0].deployLink,
       summary: projectInfo[0].summary,
       meaning: projectInfo[0].meaning,

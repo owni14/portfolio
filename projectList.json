@@ -4,13 +4,15 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Seoul_Tower_%284394893276%29.jpg",
     "title": "🚗 얻어타다",
     "date": "Jul 2022",
-    "deployLink": "https://github.com/owni14/CarpoolService_TeamProject",
-    "summary": "summary test",
+    "github": "https://github.com/owni14/CarpoolService_TeamProject",
+    "deployLink": " - ",
+    "summary": "예시로 적어보는중 테스트 데이터",
     "meaning": "meaning test",
     "technology": {
-      "frontEnd": "frontEndStackTest",
-      "backEnd": "BackEndStackTest",
-      "deployment": "Vercel"
+      "frontEnd": "HTML, Javascript, CSS, Bootstrap, jQuery",
+      "backEnd": "Java, Spring",
+      "database": "Oracle",
+      "deployment": " - "
     }
   }
 ]

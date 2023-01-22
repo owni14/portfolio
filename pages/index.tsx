@@ -53,6 +53,7 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
                 id={list.id}
                 image={list.image}
                 title={list.title}
+                github={list.github}
                 deployLink={list.deployLink}
                 summary={list.summary}
                 meaning={list.meaning}
