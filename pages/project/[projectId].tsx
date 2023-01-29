@@ -1,13 +1,12 @@
-import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
-import DetailedProject from '../../components/projects/DetailedProject';
-import ProjectList from '../../projectList.json';
-import { ProjectListProps } from '../../types';
+import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from "next";
+import DetailedProject from "../../components/projects/DetailedProject";
+import ProjectList from "../../projectList.json";
+import { ProjectListProps } from "../../types";
 
 const Project = (props: ProjectListProps) => {
   return (
     <DetailedProject
       id={props.id}
-      image={props.image}
       title={props.title}
       date={props.date}
       github={props.github}
@@ -24,7 +23,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     paths: ProjectList.map((list) => ({
       params: { projectId: list.id },
     })),
-    fallback: 'blocking',
+    fallback: "blocking",
   };
 };
 
@@ -36,7 +35,6 @@ export const getStaticProps: GetStaticProps = async (
   return {
     props: {
       id: projectInfo[0].id,
-      image: projectInfo[0].image,
       title: projectInfo[0].title,
       date: projectInfo[0].date,
       github: projectInfo[0].github,

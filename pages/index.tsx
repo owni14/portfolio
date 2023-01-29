@@ -37,8 +37,8 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
   return (
     <div className='animate-fade-in-up'>
       <div className='mb-36 mt-20 text-7xl font-bold'>
-        <p className='mb-4'>Hello! I'm Minwoo Kim from South Korea.</p>
-        <p className='mb-4'>I'm working as a Front-end developer</p>
+        <p className='mb-4'>Hello! Im Minwoo Kim from South Korea.</p>
+        <p className='mb-4'>Im working as a Front-end developer</p>
         <p>You can check my project below</p>
       </div>
       <div>
@@ -51,7 +51,6 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
               <ProjectCard
                 key={list.id}
                 id={list.id}
-                image={list.image}
                 title={list.title}
                 github={list.github}
                 deployLink={list.deployLink}

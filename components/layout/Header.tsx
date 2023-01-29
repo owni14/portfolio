@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useContext, useRef } from 'react';
+import { useContext } from 'react';
 import ClickState from '../../store/clickState';
 
 const HeaderBar = () => {
@@ -15,7 +15,7 @@ const HeaderBar = () => {
           href='/'
           onClick={() => setIsClick(false)}
         >
-          Min's Portfolio
+          Mins Portfolio
         </Link>
       </div>
       <nav>

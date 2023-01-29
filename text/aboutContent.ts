@@ -1,4 +1,4 @@
-import { AboutContentType } from '../../types';
+import { AboutContentType } from '../types';
 
 export const aboutContent: AboutContentType[] = [
   {

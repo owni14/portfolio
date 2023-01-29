@@ -2,7 +2,7 @@ import React from 'react';
 import profile from '../../assets/images/me.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
-import { aboutContent } from './aboutContent';
+import { aboutContent } from '../../text/aboutContent';
 
 const content =
   '안녕하세요🙇‍♂️ 꾸준하고 성실하게 공부마혀 어제보다 더 나은 오늘을 만들기 위해 노력하는 프론트엔드 개발자 김민우입니다.';

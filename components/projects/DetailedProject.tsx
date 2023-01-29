@@ -12,7 +12,7 @@ const DetailedProject = (props: ProjectListProps) => {
         <div className='text-4xl mb-4 font-bold'>📌 Summary</div>
         <div className='whitespace-normal font-regular'>
           {props.summary.split('\n').map((line) => (
-            <p className='mt-4'>
+            <p className='mt-4' key={line}>
               {line}
               <br />
             </p>
@@ -21,11 +21,13 @@ const DetailedProject = (props: ProjectListProps) => {
       </div>
       <div className='mb-8'>
         <div className='text-4xl mb-4 font-bold'>💡 Meaning</div>
-        <pre className='whitespace-normal font-regular'>
+        <div className='whitespace-normal font-regular'>
           {props.meaning.split('\n').map((line) => (
-            <p className='mt-4'>{line}</p>
+            <p className='mt-4' key={line}>
+              {line}
+            </p>
           ))}
-        </pre>
+        </div>
       </div>
       <div className='mb-8'>
         <div className='text-4xl mb-4 font-bold'>🔍 Github</div>
