@@ -5,12 +5,7 @@ import Mail from '../../assets/images/minutemailer.svg';
 import { useEffect, useState } from 'react';
 
 const Footer = () => {
-  const [date, setDate] = useState<number>();
-  const thisYear = new Date().getFullYear();
-
-  useEffect(() => {
-    setDate(thisYear);
-  }, []);
+  const [date, setDate] = useState<number>(new Date().getFullYear());
 
   return (
     <div className='h-[60px] w-full absolute bottom-0 font-medium'>

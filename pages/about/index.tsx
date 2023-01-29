@@ -23,7 +23,7 @@ const about = () => {
             </p>
           </div>
           {aboutContent.map((item) => (
-            <div className='flex flex-row text-2xl h-[40px]'>
+            <div className='flex flex-row text-2xl h-[40px]' key={item.title}>
               <div className='w-[120px]'>{item.title}</div>
               {item.content === `Min's Blog` ? (
                 <Link

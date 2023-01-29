@@ -7,7 +7,6 @@ export interface Props {
 
 export interface ProjectListProps {
   id: string;
-  image: string;
   title: string;
   github: string;
   deployLink: string;
@@ -25,7 +24,6 @@ export interface ProjectListProps {
 export interface CardProps {
   id: number;
   date: string;
-  image: string;
   title: string;
 }
 
