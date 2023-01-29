@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
-import DetailedProject from '../../components/DetailedProject';
+import DetailedProject from '../../components/projects/DetailedProject';
 import ProjectList from '../../projectList.json';
 import { ProjectListProps } from '../../types';
 

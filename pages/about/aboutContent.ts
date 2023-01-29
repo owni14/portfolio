@@ -31,6 +31,6 @@ export const aboutContent: AboutContentType[] = [
   },
   {
     title: 'Interest : ',
-    content: '개발, 축구, 음악감상',
+    content: '개발, 축구, 사진촬영, 음악감상',
   },
 ];
