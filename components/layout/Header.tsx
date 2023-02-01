@@ -15,7 +15,7 @@ const HeaderBar = () => {
           href='/'
           onClick={() => setIsClick(false)}
         >
-          Mins Portfolio
+          Min&#39;s Portfolio
         </Link>
       </div>
       <nav>
