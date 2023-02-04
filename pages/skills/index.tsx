@@ -38,7 +38,7 @@ import IconVercel from '../../assets/images/vercel.svg';
 
 const skills = () => {
   return (
-    <div className='text-3xl w-full animate-fade-in-up py-5 flex flex-row justify-between font-bold'>
+    <div className='text-3xl w-full animate-fade-in-up py-5 flex flex-row justify-between font-appleBold'>
       <SkillsCard>
         <div className='border-b-4 border-black'>Front End</div>
         <div className='grid grid-cols-2 gap-2 place-items-center mt-3'>

@@ -11,7 +11,7 @@ const HeaderBar = () => {
     <div className='flex flex-row flex-wrap content-center justify-between h-[120px] text-xl sticky top-0 bg-neutral-900 z-10 font-regular'>
       <div>
         <Link
-          className='hover:opacity-50 hover:duration-500'
+          className='hover:opacity-50 hover:duration-500 font-appleSemiBold'
           href='/'
           onClick={() => setIsClick(false)}
         >
@@ -19,7 +19,7 @@ const HeaderBar = () => {
         </Link>
       </div>
       <nav>
-        <ul className='flex flex-row gap-10 list-none'>
+        <ul className='flex flex-row gap-10 list-none font-appleSemiBold'>
           {navLink.map((link) => (
             <li className='float-left' key={link}>
               {link === 'Projects' ? (

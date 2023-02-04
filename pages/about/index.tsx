@@ -10,9 +10,9 @@ const content =
 const about = () => {
   return (
     <div className='animate-fade-in-up'>
-      <h1 className='text-5xl font-bold'>About Me</h1>
+      <h1 className='text-5xl font-appleSemiBold'>About Me</h1>
       <div className='border-2 w-40 ml-[142px] mb-12'></div>
-      <div className='flex flex-row justify-between items-center font-light'>
+      <div className='flex flex-row justify-between items-center font-appleRegular'>
         <Image src={profile} width={600} alt='Picture of me' />
         <div className='w-6/12 flex flex-col justify-evenly'>
           <div className='text-2xl mb-8'>

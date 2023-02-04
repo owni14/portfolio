@@ -13,10 +13,12 @@ const Card = (props: ProjectListProps) => {
           )}
         </div>
         <div>
-          <h1 className='my-4 text-2xl font-bold group-hover:text-gray-400 group-hover:duration-500 font-bold'>
+          <h1 className='my-4 text-2xl font-bold group-hover:text-gray-400 group-hover:duration-500 font-appleSemiBold'>
             {props.title}
           </h1>
-          <p className='text-xl text-gray-400 font-regular'>{props.date}</p>
+          <p className='text-xl text-gray-400 font-appleRegular'>
+            {props.date}
+          </p>
         </div>
       </Link>
     </div>

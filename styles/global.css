@@ -3,3 +3,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/** Bold */
+@font-face {
+  font-family: 'San-Francisco-Bold';
+  font-weight: 700;
+  src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff');
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: 'San-Francisco-Semi-Bold';
+  font-weight: 600;
+  src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff');
+}
+
+/** Medium */
+@font-face {
+  font-family: 'San-Francisco-Medium';
+  font-weight: 500;
+  src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff');
+}
+
+/** Regular */
+@font-face {
+  font-family: 'San-Francisco-Regular';
+  font-weight: 400;
+  src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff');
+}
