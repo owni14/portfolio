@@ -36,7 +36,7 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
 
   return (
     <div className='animate-fade-in-up'>
-      <div className='mb-36 mt-20 text-7xl font-appleBold'>
+      <div className='mb-36 mt-20 text-7xl laptopL:text-6xl font-appleBold'>
         <p className='mb-4'>Hello! I&#39;m Minwoo Kim from South Korea.</p>
         <p className='mb-4'>I&#39;m working as a Front-end developer</p>
 

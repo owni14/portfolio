@@ -28,6 +28,14 @@ module.exports = {
       appleMedium: ['San-Francisco-Medium'],
       appleRegular: ['San-Francisco-Regular'],
     },
+    screens: {
+      mobileS: { max: '320px' },
+      mobileM: { max: '375px' },
+      mobileL: { max: '425px' },
+      tablet: { max: '768px' },
+      laptop: { max: '1024px' },
+      laptopL: { max: '1280px' },
+    },
   },
   plugins: [],
 };

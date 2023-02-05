@@ -2,7 +2,7 @@ import React from 'react';
 import profile from '../../assets/images/me.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
-import { aboutContent } from '../../text/aboutContent';
+import { aboutContent } from '../../data/aboutContent';
 
 const content =
   '안녕하세요🙇‍♂️ 꾸준하고 성실하게 공부마혀 어제보다 더 나은 오늘을 만들기 위해 노력하는 프론트엔드 개발자 김민우입니다.';
@@ -24,7 +24,7 @@ const about = () => {
           </div>
           {aboutContent.map((item) => (
             <div className='flex flex-row text-2xl h-[40px]' key={item.title}>
-              <div className='w-[120px]'>{item.title}</div>
+              <div className='w-[130px]'>{item.title}</div>
               {item.content === `Min's Blog` ? (
                 <Link
                   className='hover:text-gray-500 hover:duration-300'
