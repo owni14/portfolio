@@ -27,6 +27,10 @@ const HeaderBar = () => {
                   href='/'
                   as={`/#project-list`}
                   onClick={() => setIsClick(true)}
+                  className='
+                  hover:opacity-50
+                  hover:duration-500
+                  '
                 >
                   {link}
                 </Link>
