@@ -8,7 +8,7 @@ const HeaderBar = () => {
   const [isClick, setIsClick] = useContext<any>(ClickState);
 
   return (
-    <div className='flex flex-row flex-wrap content-center justify-between h-[120px] text-xl sticky top-0 bg-neutral-900 z-10 font-regular tablet:text-lg mobileL:flex-col mobileL:items-center mobileL:h-[90px] mobileL:pb-[15px] mobileL:pt-[15px]'>
+    <div className='flex flex-row flex-wrap content-center justify-between h-[80px] text-xl sticky top-0 bg-neutral-900 z-10 font-regular tablet:text-lg mobileL:flex-col mobileL:items-center mobileL:h-[90px] mobileL:pb-[15px] mobileL:pt-[15px]'>
       <div className='text-xl'>
         <Link
           className='hover:opacity-50 hover:duration-500 font-appleSemiBold'

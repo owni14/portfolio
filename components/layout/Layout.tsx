@@ -1,7 +1,7 @@
-import { ClickStateProvider } from '../../store/clickState';
-import { Props } from '../../types';
-import Footer from './Footer';
-import Header from './Header';
+import { ClickStateProvider } from "../../store/clickState";
+import { Props } from "../../types";
+import Footer from "./Footer";
+import Header from "./Header";
 
 const Layout = (props: Props) => {
   return (
