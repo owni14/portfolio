@@ -12,7 +12,7 @@ const career = () => {
       <div className='flex flex-row flex-1 my-12 items-center justify-between'>
         <h3 className='text-3xl w-1/6 font-appleSemiBold'>Experience</h3>
         <ul className='w-5/6 list-disc font-appleMedium'>
-          <li>(주) YGBS (2022.11 ~ 현재)</li>
+          <li>(주) YGBS (2022.11 ~ 2023.03)</li>
         </ul>
       </div>
     </div>
