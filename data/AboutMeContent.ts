@@ -1,6 +1,6 @@
 import { IAboutContent } from "../types";
 
-export const AboutContent: IAboutContent[] = [
+export const AboutMeContent: IAboutContent[] = [
   {
     title: "Name : ",
     content: "김민우",
