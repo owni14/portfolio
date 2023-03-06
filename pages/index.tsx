@@ -15,7 +15,6 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
   // project rendering될 때 실행되는 hook
   useEffect(() => {
     setProjectList(props.ReceivedProjectList);
-    console.log("check:: ", props.ReceivedProjectList);
   }, [props]);
 
   // query가 project-list로 들어왔을 때 실행되는 hook

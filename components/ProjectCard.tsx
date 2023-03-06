@@ -9,7 +9,10 @@ const Card = ({ id, title, component, date, sortDate }: IProjectList) => {
     <div className='max-h-[35rem]'>
       <Link
         className='group'
-        href={`/project/${component}`}
+        href={{
+          pathname: `/project/${component}`,
+          query: { title: title },
+        }}
         as={`/project/${id}`}
       >
         <div className='max-h-[450px] overflow-hidden '>
