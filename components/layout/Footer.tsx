@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import Github from '../../assets/images/github.svg';
-import Blog from '../../assets/images/blogger.svg';
-import Mail from '../../assets/images/minutemailer.svg';
-import { useEffect, useState } from 'react';
+import Link from "next/link";
+import Github from "../../assets/images/github.svg";
+import Blog from "../../assets/images/blogger.svg";
+import Mail from "../../assets/images/minutemailer.svg";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
   const [date, setDate] = useState<number>(new Date().getFullYear());

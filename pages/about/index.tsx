@@ -1,11 +1,11 @@
-import React from 'react';
-import profile from '../../assets/images/me.jpg';
-import Image from 'next/image';
-import Link from 'next/link';
-import { aboutContent } from '../../data/aboutContent';
+import React from "react";
+import profile from "../../assets/images/me.jpg";
+import Image from "next/image";
+import Link from "next/link";
+import { AboutContent } from "../../data/AboutContent";
 
 const content =
-  '안녕하세요🙇‍♂️ 꾸준하고 성실하게 공부하며 어제보다 더 나은 오늘을 만들기 위해 노력하는 프론트엔드 개발자 김민우입니다.';
+  "안녕하세요🙇‍♂️ 꾸준하고 성실하게 공부하며 어제보다 더 나은 오늘을 만들기 위해 노력하는 프론트엔드 개발자 김민우입니다.";
 
 const about = () => {
   return (
@@ -28,7 +28,7 @@ const about = () => {
               노력하는 프론트엔드 개발자 김민우입니다.
             </p>
           </div>
-          {aboutContent.map((item) => (
+          {AboutContent.map((item) => (
             <div
               className='flex flex-row text-2xl h-[40px] tablet:text-xl mobileL:text-base mobileS:text-xs'
               key={item.title}

@@ -1,10 +1,9 @@
 import Link from "next/link";
 import { useContext } from "react";
 import ClickState from "../../store/clickState";
+import { NavLink } from "../../data/NavLink";
 
 const HeaderBar = () => {
-  const navLink = ["Projects", "About", "Skills", "Career"];
-
   const [isClick, setIsClick] = useContext<any>(ClickState);
 
   return (
@@ -20,7 +19,7 @@ const HeaderBar = () => {
       </div>
       <nav>
         <ul className='flex flex-row gap-10 list-none font-appleSemiBold tablet:gap-3'>
-          {navLink.map((link) => (
+          {NavLink.map((link) => (
             <li className='float-left' key={link}>
               {link === "Projects" ? (
                 <Link
