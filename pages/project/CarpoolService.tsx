@@ -12,7 +12,7 @@ const CarpoolService = () => {
       <hr className='mb-8' />
       <div className='mb-8'>
         <div className='text-4xl mb-4 font-appleSemiBold'>📌 Summary</div>
-        <div className='whitespace-normal font-appleMedium text-xl'>
+        <div className='whitespace-normal font-appleMedium text-lg'>
           <p className='mb-2'>
             같은 회사 사람들끼리 카풀을 이용할 수 있는 웹서비스입니다. 회원가입
             완료 후 자차를 소지하고 있으면 운전자 등록이 가능한데 면허증을
@@ -36,7 +36,7 @@ const CarpoolService = () => {
       </div>
       <div className='mb-8'>
         <div className='text-4xl mb-4 font-appleSemiBold'>💡 Meaning</div>
-        <div className='whitespace-normal font-appleMedium text-xl'>
+        <div className='whitespace-normal font-appleMedium text-lg'>
           <p className='mb-2'>
             학원에서 진행 한 첫 팀프로젝트로써 막막함도 있었지만 팀원들이랑 같이
             아침부터 저녁까지 코딩을 하면서 모르는 것을 서로 물어보고 각자 맡은
@@ -66,7 +66,7 @@ const CarpoolService = () => {
       <div className='mb-8'>
         <div className='text-4xl mb-4 font-appleSemiBold'>🔍 Github</div>
         <Link
-          className='hover:text-gray-500 hover:duration-300 font-appleMedium text-xl'
+          className='hover:text-gray-500 hover:duration-300 font-appleMedium text-lg'
           href='https://github.com/owni14/CarpoolService_TeamProject'
         >
           https://github.com/owni14/CarpoolService_TeamProject
@@ -77,7 +77,7 @@ const CarpoolService = () => {
           🔗 Deployment Link
         </div>
         <Link
-          className='hover:text-gray-500 hover:duration-300 font-appleMedium text-xl'
+          className='hover:text-gray-500 hover:duration-300 font-appleMedium text-lg'
           href='#'
         >
           -
@@ -87,7 +87,7 @@ const CarpoolService = () => {
         <div className='text-4xl mb-4 font-appleSemiBold'>
           🛠️ Technology Stacks
         </div>
-        <div className='font-appleMedium text-xl'>
+        <div className='font-appleMedium text-lg'>
           <li>Front End : HTML, Javascript, CSS, Bootstrap, jQuery</li>
           <li>Back End : Java, Spring</li>
           <li>Database : Oracle</li>

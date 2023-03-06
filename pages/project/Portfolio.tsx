@@ -11,7 +11,7 @@ const Portfolio = () => {
       <hr className='mb-8' />
       <div className='mb-8'>
         <div className='text-4xl mb-4 font-appleSemiBold'>📌 Summary</div>
-        <div className='whitespace-normal font-appleMedium text-xl'>
+        <div className='whitespace-normal font-appleMedium text-lg'>
           <p className='mb-2'>
             써보지 않았던 프레임워크인 Next.js와 처음 써보는 CSS인 tailwindCSS를
             같이해서 만든 <b>개인 포트폴리오</b>입니다.
@@ -25,7 +25,7 @@ const Portfolio = () => {
       </div>
       <div className='mb-8'>
         <div className='text-4xl mb-4 font-appleSemiBold'>💡 Meaning</div>
-        <div className='whitespace-normal font-appleMedium text-xl'>
+        <div className='whitespace-normal font-appleMedium text-lg'>
           <p className='mb-2'>
             웹 프로젝트는 JSP와 부트스트랩을 이용해 만든 적이 있지만 실제로 제가
             처음부터 끝까지 혼자서 퍼블리싱과 여러 기능들을 만든 것은 처음인
@@ -56,7 +56,7 @@ const Portfolio = () => {
       <div className='mb-8'>
         <div className='text-4xl mb-4 font-appleSemiBold'>🔍 Github</div>
         <Link
-          className='hover:text-gray-500 hover:duration-300 font-appleMedium text-xl'
+          className='hover:text-gray-500 hover:duration-300 font-appleMedium text-lg'
           href='https://github.com/owni14/portfolio'
         >
           https://github.com/owni14/portfolio
@@ -67,7 +67,7 @@ const Portfolio = () => {
           🔗 Deployment Link
         </div>
         <Link
-          className='hover:text-gray-500 hover:duration-300 font-appleMedium text-xl'
+          className='hover:text-gray-500 hover:duration-300 font-appleMedium text-lg'
           href='https://mins-portfolio.vercel.app/'
         >
           https://mins-portfolio.vercel.app/
@@ -77,7 +77,7 @@ const Portfolio = () => {
         <div className='text-4xl mb-4 font-appleSemiBold'>
           🛠️ Technology Stacks
         </div>
-        <div className='font-appleMedium text-xl'>
+        <div className='font-appleMedium text-lg'>
           <li>Front End : Next.js, TailwindCSS, Typescript</li>
           <li>Back End : -</li>
           <li>Database : -</li>
