@@ -1,34 +1,34 @@
-import React, { useContext, useRef } from 'react';
-import ProjectCard from '../components/ProjectCard';
-import { GetStaticProps, InferGetServerSidePropsType } from 'next';
-import { useState, useEffect } from 'react';
-import { ProjectListProps } from '../types';
-import ReceivedProjectList from '../projectList.json';
-import ClickState from '../store/clickState';
+import React, { useContext, useRef } from "react";
+import ProjectCard from "../components/ProjectCard";
+import { GetStaticProps, InferGetServerSidePropsType } from "next";
+import { useState, useEffect } from "react";
+import { IProjectList } from "../types";
+import ReceivedProjectList from "../projectList.json";
+import ClickState from "../store/clickState";
 
 const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
-  const [projectList, setProjectList] = useState<ProjectListProps[]>([]);
+  const [projectList, setProjectList] = useState<IProjectList[]>([]);
   const element = useRef<any>();
   const isClick = useContext<any>(ClickState);
   const headerHeight = -120;
 
-  /* project rendering될 때 실행되는 hook */
+  // project rendering될 때 실행되는 hook
   useEffect(() => {
     setProjectList(props.ReceivedProjectList);
   }, [props]);
 
-  /* query가 project-list로 들어왔을 때 실행되는 hook */
+  // query가 project-list로 들어왔을 때 실행되는 hook
   useEffect(() => {
     const targetElement =
       element.current.getBoundingClientRect().top +
       window.scrollY +
       headerHeight;
     if (isClick[0]) {
-      /* project list로 scroll하는 함수 */
+      // project list로 scroll하는 함수
       setTimeout(() => {
         window.scrollTo({
           top: targetElement,
-          behavior: 'smooth',
+          behavior: "smooth",
         });
       }, 100);
     }
@@ -47,18 +47,14 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
           ref={element}
           className='grid grid-cols-2 gap-16 place-items-center'
         >
-          {projectList.map((list) => {
+          {projectList.map((v, i) => {
             return (
               <ProjectCard
-                key={list.id}
-                id={list.id}
-                title={list.title}
-                github={list.github}
-                deployLink={list.deployLink}
-                summary={list.summary}
-                meaning={list.meaning}
-                technology={list.technology}
-                date={list.date}
+                key={i}
+                id={v.id}
+                title={v.title}
+                component={v.component}
+                date={v.date}
               />
             );
           })}

@@ -1,33 +1,24 @@
-import React from 'react';
+import React from "react";
 
 /* Types collection */
-export interface Props {
+export interface IProps {
   children: React.ReactNode;
 }
 
-export interface ProjectListProps {
+export interface IProjectList {
   id: string;
   title: string;
-  github: string;
-  deployLink: string;
-  summary: string;
-  meaning: string;
-  technology: {
-    frontEnd: string;
-    backEnd: string;
-    database: string;
-    deployment: string;
-  };
+  component: string;
   date: string;
 }
 
-export interface CardProps {
+export interface ICard {
   id: number;
   date: string;
   title: string;
 }
 
-export interface AboutContentType {
+export interface IAboutContent {
   title: string;
   content: string;
 }
