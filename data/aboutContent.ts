@@ -1,36 +1,36 @@
-import { AboutContentType } from '../types';
+import { IAboutContent } from "../types";
 
-export const aboutContent: AboutContentType[] = [
+export const aboutContent: IAboutContent[] = [
   {
-    title: 'Name : ',
-    content: '김민우',
+    title: "Name : ",
+    content: "김민우",
   },
   {
-    title: 'Birth :',
-    content: '99.05.14',
+    title: "Birth :",
+    content: "99.05.14",
   },
   {
-    title: 'Address : ',
-    content: '서울특별시 관악구',
+    title: "Address : ",
+    content: "서울특별시 관악구",
   },
   {
-    title: 'Profession : ',
-    content: 'Front End Developer',
+    title: "Profession : ",
+    content: "Front End Developer",
   },
   {
-    title: 'Blog : ',
+    title: "Blog : ",
     content: `Min's Blog`,
   },
   {
-    title: 'Email : ',
-    content: 'kmwoo514@gmail.com',
+    title: "Email : ",
+    content: "kmwoo514@gmail.com",
   },
   {
-    title: 'Github : ',
+    title: "Github : ",
     content: `Min's Github`,
   },
   {
-    title: 'Interest : ',
-    content: '개발, 축구, 사진촬영, 음악감상',
+    title: "Interest : ",
+    content: "개발, 축구, 사진촬영, 음악감상",
   },
 ];

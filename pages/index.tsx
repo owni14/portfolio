@@ -15,6 +15,7 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
   // project rendering될 때 실행되는 hook
   useEffect(() => {
     setProjectList(props.ReceivedProjectList);
+    console.log("check:: ", props.ReceivedProjectList);
   }, [props]);
 
   // query가 project-list로 들어왔을 때 실행되는 hook
@@ -55,6 +56,7 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
                 title={v.title}
                 component={v.component}
                 date={v.date}
+                sortDate={v.sortDate}
               />
             );
           })}
@@ -68,7 +70,10 @@ const Home = (props: InferGetServerSidePropsType<typeof getStaticProps>) => {
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
-      ReceivedProjectList: ReceivedProjectList,
+      // 최신순으로 정렬
+      ReceivedProjectList: ReceivedProjectList.sort(
+        (a: IProjectList, b: IProjectList) => b.sortDate - a.sortDate
+      ),
     },
   };
 };

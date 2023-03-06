@@ -2,8 +2,9 @@ import React from "react";
 import Link from "next/link";
 import { IProjectList } from "../types";
 import CarpoolServiceImage from "../assets/images/carpoolService.svg";
+import PortfolioImage from "../assets/images/portfolio.svg";
 
-const Card = ({ id, title, component, date }: IProjectList) => {
+const Card = ({ id, title, component, date, sortDate }: IProjectList) => {
   return (
     <div className='max-h-[35rem]'>
       <Link
@@ -12,8 +13,10 @@ const Card = ({ id, title, component, date }: IProjectList) => {
         as={`/project/${id}`}
       >
         <div className='max-h-[450px] overflow-hidden '>
-          {id === "carpool-service" && (
+          {id === "carpool-service" ? (
             <CarpoolServiceImage className='group-hover:scale-105 group-hover:duration-500' />
+          ) : (
+            <PortfolioImage className='group-hover:scale-105 group-hover:duration-500' />
           )}
         </div>
         <div>

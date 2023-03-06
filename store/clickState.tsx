@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { Props } from '../types';
+import React, { useState } from "react";
+import { IProps } from "../types";
 
 const ClickState: any = React.createContext({
   isClick: false,
 });
 
-export const ClickStateProvider = (props: Props) => {
+export const ClickStateProvider = (props: IProps) => {
   const [isClick, setIsClick] = useState<boolean>(false);
 
   return (

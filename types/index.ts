@@ -1,6 +1,6 @@
 import React from "react";
 
-/* Types collection */
+// Types collection
 export interface IProps {
   children: React.ReactNode;
 }
@@ -10,6 +10,7 @@ export interface IProjectList {
   title: string;
   component: string;
   date: string;
+  sortDate: number;
 }
 
 export interface ICard {
